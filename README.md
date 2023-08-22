@@ -33,3 +33,14 @@ python manage.py runserver
 ```bash
 django-admin startapp <app-name>
 ```
+
+
+9. 앱 등록 => `settings.py`
+```python
+INSTALLED_APPS = [
+    ...
+    <app_name>,
+]
+```
+
+10. `url.py` => `views.py` => `templates/*.html` 순서로 코드 작성
