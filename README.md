@@ -94,8 +94,14 @@ python manage.py createsuperuser
 ## CRUD 로직 작성
 
 ### 1. Read
-
+- 경로 실행을 위해 urls
+```python
+from posts import views
+# path 작성 필요!
+path('')
+```
 - 전체 게시물 출력
+- views import 주의!
 ```python
 def index(request):
     posts = Post.objects.all()
